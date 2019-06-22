@@ -12,6 +12,7 @@ end
 require "pry"
 def age_appropriate_birthday(birthday_kids)
   birthday_kids.each do |kids_name, age|
+    binding.pry
   if birthday_kids[:age] <= 12 
     puts "Happy Birthday #{kids_name}! You are now #{age} years old!"
   else
